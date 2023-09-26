@@ -4,8 +4,10 @@
 
 本次作業要求為預測角色是否死亡，資料來源是character-deaths.csv，裡面共有917筆資料。並且使用決策樹作為主要的模型。
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/199c0fbf-d791-45e8-9903-7e182255c53b/43d5e0bb-1d3f-4057-9e55-af3a9417bab6/Untitled.png)
+## Import dataset
 
+character_deaths = pd.read_csv("./Dataset/character-deaths.csv")
+print(f"character_deaths length: {len(character_deaths)}")
 # 作業流程
 
 ## 1. 讀取資料
