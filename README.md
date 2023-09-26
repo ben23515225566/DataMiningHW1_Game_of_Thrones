@@ -6,8 +6,10 @@
 
 ## Import dataset
 
+```python
 character_deaths = pd.read_csv("./Dataset/character-deaths.csv")
 print(f"character_deaths length: {len(character_deaths)}")
+```
 # 作業流程
 
 ## 1. 讀取資料
