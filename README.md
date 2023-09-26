@@ -117,11 +117,9 @@ print("Done")
 
 我參考了網路上其他人的做法將Book Intro Chapter這個欄位變為二元值，把空值的部分填0，其他則是填1，因為有被介紹的角色可能會影響到他的死亡率，所以這個欄位或許可以當作參考。
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/199c0fbf-d791-45e8-9903-7e182255c53b/051344da-d361-4ad9-ad95-4900fe847ad6/Untitled.png)
 
 不過在經過實驗之後發現這樣處理過的資料訓練的模型在kaggle的分數反而降低，所以我認爲或許像之前一樣讓這個欄位的值有大有小會比較好，因為被介紹的先後順序也是一種資訊，或許越後面被介紹的角色死亡率會跟低也說不一定。有鑑於此，我想嘗試看看做標準化會不會好一點。
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/199c0fbf-d791-45e8-9903-7e182255c53b/4d2a6b11-bd4e-41bf-923a-7b98a88cc401/Untitled.png)
 
 ## Normalize
 
